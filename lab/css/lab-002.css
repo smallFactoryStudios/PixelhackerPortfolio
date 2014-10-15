@@ -1,0 +1,37 @@
+button {
+  border: 1px solid #999;
+  background-color: #efefef;
+  font-family: "Open Sans";
+  outline: 0; }
+  button:hover {
+    border: 1px solid #999;
+    background-color: #545454;
+    color: #fff;
+    cursor: pointer; }
+
+body {
+  font-family: "Open Sans";
+  color: #333;
+  font-size: 62.5%;
+  margin: 0 auto; }
+
+h1 {
+  color: #000;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center; }
+
+#cnv {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%; }
+
+#vid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -192px 0 0 -320px; }

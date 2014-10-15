@@ -1,0 +1,90 @@
+/*****************/
+/* HOME STYLES */
+/*****************/
+#home {
+    height: 800px;
+    background: #202020;
+    overflow: hidden;
+    #bg{
+        position: absolute;
+        width: 100%;
+        height: auto;
+        z-index: 5;
+        opacity: 0;
+    }
+
+    aside{
+        position:absolute;
+        top:90px;
+        left:-280px;
+        background-color: rgba(209, 0, 117, .5);
+        width:230px;
+        height:480px;
+        padding:10px 10px 10px;
+        .weather-header{
+            color:#fff;
+            font-family: $fonts;
+            font-size:26px;
+            padding:0 0 14px;
+        }
+        .weather-label{
+            color:#666;
+            font-family: $fonts;
+            font-size:18px;
+        }
+        .weather-value{
+            color:#fff;
+            font-family: $fonts;
+            font-size:18px;
+        }
+        #temperature{
+            padding:0 0 15px;
+        }
+        #time{
+            padding:0 0 15px;
+        }
+        #weather{
+            padding:0 0 15px;
+        }
+    }
+
+    .text{
+        width: 100%;
+        position: absolute;
+        z-index: 10;
+    }
+
+    .title {
+        margin-top: 285px;
+        text-align: center;
+        line-height: 40px;
+        opacity: 0;
+
+        .sub-header{
+            font-family: $fonts;
+            color: $muted-one;
+            font-size: 2rem;
+        }
+    }
+
+    .scroll{
+        display: block;
+        width: 105px;
+        margin: 275px auto 0;
+        font-family: $fonts;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 1.3rem;
+        font-weight: $bold;
+        color: $muted-one;
+        position: relative;
+        bottom: -330px;
+        opacity: 0;
+        height: 45px;
+        text-align: center;
+        background: no-repeat url("/img/icons/arrow_scroll.png") bottom center;
+        &:hover {
+            color: $highlight-one;
+        }
+    }
+}

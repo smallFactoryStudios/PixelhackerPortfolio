@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=0" />
+	<title>pixelhacker lab :: HTML5 Video</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/lab-002.css"/>
+</head>
+<body>
+	<h1>HTML5 Video - Canvas</h1>
+	<div id="main-video-toggle">
+		<button>toggle main video</button>
+	</div>
+	<canvas id="cnv"></canvas>
+	<video id="vid" autoplay loop>
+		<source src="video-001.mp4" type="video/mp4">
+		<source src="video-001.webm" type="video/webm">
+	</video>
+
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function(){
+			var vid = document.getElementById('vid');
+			var canvas = document.getElementById('cnv');
+			var context = canvas.getContext('2d');
+
+			var cw = Math.floor(canvas.clientWidth / 50);
+			var ch = Math.floor(canvas.clientHeight / 50);
+			canvas.width = cw;
+			canvas.height = ch;
+
+			vid.addEventListener('play', function(){
+				draw(this,context,cw,ch);
+			},false);
+
+		},false);
+
+		function draw(vid,c,w,h) {
+			if(vid.paused || vid.ended) return false;
+			c.drawImage(vid,0,0,w,h);
+			setTimeout(draw,20,vid,c,w,h);
+		}
+	</script>
+</body>
+</html>

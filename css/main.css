@@ -1,0 +1,670 @@
+/*****************/
+/* MIXINS */
+/*****************/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/*****************/
+/* RESET STYLES */
+/*****************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*****************/
+/* GLOBAL STYLES */
+/*****************/
+body {
+  background: #202020;
+  color: #818785;
+  width: 100%;
+  height: 100%; }
+
+html {
+  font-size: 62.5%; }
+
+#page {
+  position: relative;
+  z-index: 10; }
+
+#home {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10; }
+
+#container {
+  position: absolute;
+  top: 800px;
+  width: 100%;
+  z-index: 11; }
+
+.content {
+  width: 960px;
+  margin: 0 auto; }
+
+h1 {
+  color: #e51c00;
+  font-size: 4rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px; }
+
+h2 {
+  color: #e51c00;
+  font-size: 3.2rem;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+
+section {
+  width: 100%;
+  display: none; }
+
+footer {
+  display: none; }
+
+a {
+  outline: none; }
+
+/*****************/
+/* HEADER STYLES */
+/*****************/
+header {
+  position: fixed;
+  top: 0;
+  z-index: 500;
+  width: 100%;
+  height: 79px; }
+  header .content {
+    position: relative;
+    z-index: 120;
+    width: 915px; }
+  header .wrapper {
+    position: absolute;
+    top: -80px;
+    width: 100%;
+    height: 100%;
+    z-index: 110;
+    background: #1f1f1f; }
+  header #logo {
+    display: block;
+    float: left;
+    width: 97px;
+    height: 75px;
+    background: no-repeat url("img/phLogo.png") 0 0;
+    text-indent: -9999px;
+    margin-top: 6px; }
+  header nav {
+    float: right;
+    margin-top: 33px;
+    position: relative;
+    top: -300px; }
+    header nav ul li {
+      float: left;
+      margin: 0 15px; }
+      header nav ul li a {
+        display: block;
+        font-size: 1.4rem;
+        color: #8e8e8e;
+        font-weight: 400;
+        font-family: "Open Sans", sans-serif;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding-bottom: 6px;
+        border-bottom: 1px solid #666; }
+      header nav ul li.current a {
+        border-bottom: 2px solid #e51c00; }
+
+/*****************/
+/* HOME STYLES */
+/*****************/
+#home {
+  height: 800px;
+  background: #202020;
+  overflow: hidden; }
+  #home #bg {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: 5;
+    opacity: 0; }
+  #home aside {
+    position: absolute;
+    top: 90px;
+    left: -280px;
+    background-color: rgba(209, 0, 117, 0.5);
+    width: 230px;
+    height: 480px;
+    padding: 10px 10px 10px; }
+    #home aside .weather-header {
+      color: #fff;
+      font-family: "Open Sans", sans-serif;
+      font-size: 26px;
+      padding: 0 0 14px; }
+    #home aside .weather-label {
+      color: #666;
+      font-family: "Open Sans", sans-serif;
+      font-size: 18px; }
+    #home aside .weather-value {
+      color: #fff;
+      font-family: "Open Sans", sans-serif;
+      font-size: 18px; }
+    #home aside #temperature {
+      padding: 0 0 15px; }
+    #home aside #time {
+      padding: 0 0 15px; }
+    #home aside #weather {
+      padding: 0 0 15px; }
+  #home .text {
+    width: 100%;
+    position: absolute;
+    z-index: 10; }
+  #home .title {
+    margin-top: 285px;
+    text-align: center;
+    line-height: 40px;
+    opacity: 0; }
+    #home .title .sub-header {
+      font-family: "Open Sans", sans-serif;
+      color: #9f9f9f;
+      font-size: 2rem; }
+  #home .scroll {
+    display: block;
+    width: 105px;
+    margin: 275px auto 0;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #9f9f9f;
+    position: relative;
+    bottom: -330px;
+    opacity: 0;
+    height: 45px;
+    text-align: center;
+    background: no-repeat url("/img/icons/arrow_scroll.png") bottom center; }
+    #home .scroll:hover {
+      color: #e51c00; }
+
+/*****************/
+/* PORTFOLIO STYLES */
+/*****************/
+#portfolio {
+  position: relative;
+  background: #e9e9e9;
+  padding: 95px 0 80px;
+  overflow: hidden; }
+  #portfolio h2 {
+    text-transform: uppercase;
+    padding: 5px 0 20px; }
+  #portfolio article {
+    float: left;
+    position: relative;
+    width: auto;
+    height: 240px;
+    overflow: hidden;
+    font-family: "Open Sans", sans-serif;
+    line-height: 0; }
+    #portfolio article .info {
+      position: absolute;
+      top: 240;
+      left: 0;
+      width: 240px;
+      height: 240px;
+      background: #1d1d1d;
+      background: rgba(29, 29, 29, 0.9);
+      line-height: 16px;
+      font-family: "Open Sans", sans-serif; }
+      #portfolio article .info h3 {
+        position: relative;
+        font-family: "Open Sans", sans-serif;
+        font-size: 24px;
+        color: #e51c00;
+        text-transform: uppercase;
+        line-height: 21px;
+        margin: 0 10%;
+        padding: 20px 0 5px; }
+      #portfolio article .info p {
+        margin: 0 10%;
+        padding: 10px 0 0;
+        font-family: "Open Sans", sans-serif;
+        color: #aeaeae;
+        font-size: 14px;
+        line-height: 16px; }
+      #portfolio article .info .link,
+      #portfolio article .info .soon {
+        position: absolute;
+        bottom: 20px;
+        font-family: "Open Sans", sans-serif;
+        text-transform: uppercase;
+        color: #9f9f9f;
+        font-size: 1.2rem;
+        border: 2px solid #dadada;
+        text-align: center;
+        margin: 0 25%;
+        padding: .4rem 1.5rem; }
+      #portfolio article .info .link {
+        cursor: pointer;
+        text-decoration: none;
+        padding: 4px 10px; }
+        #portfolio article .info .link:hover {
+          color: #e51c00; }
+
+/*****************/
+/* PORTFOLIO ITEM STYLES */
+/*****************/
+.port-close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  padding: 1.5rem 1.5rem 0 0; }
+  .port-close-button:hover {
+    cursor: pointer; }
+
+#port {
+  padding: 2rem 3.5rem; }
+  #port:before, #port:after {
+    content: " ";
+    display: table; }
+  #port:after {
+    clear: both; }
+  #port .port-image {
+    float: left;
+    padding: 0 2rem 0 0; }
+  #port .port-info {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    width: 40rem; }
+    #port .port-info .title-port {
+      display: block;
+      z-index: 840;
+      color: #c00;
+      font-family: "Open Sans", sans-serif;
+      font-size: 3.6rem;
+      font-weight: 700; }
+    #port .port-info .info-port {
+      display: block;
+      padding: 1.3rem 0;
+      font-family: "Open Sans", sans-serif;
+      font-size: 1.4rem;
+      color: #000; }
+    #port .port-info .link-port {
+      display: none; }
+    #port .port-info .agency-port {
+      display: block;
+      padding: .3rem 0;
+      font-family: "Open Sans", sans-serif;
+      font-size: 1.4rem;
+      color: #000; }
+    #port .port-info .tech-port {
+      display: block;
+      padding: .3rem 0;
+      font-family: "Open Sans", sans-serif;
+      font-size: 1.4rem;
+      color: #000; }
+    #port .port-info .role-port {
+      display: block;
+      padding: .3rem 0;
+      font-family: "Open Sans", sans-serif;
+      font-size: 1.4rem;
+      color: #000; }
+    #port .port-info .awards-port {
+      display: none;
+      padding: 1.3rem 0;
+      font-family: "Open Sans", sans-serif;
+      font-size: 1.4rem;
+      color: #000; }
+      #port .port-info .awards-port .title {
+        font-weight: 700; }
+    #port .port-info a {
+      font-family: "Open Sans", sans-serif;
+      font-size: 1.4rem;
+      color: #000;
+      text-decoration: none; }
+      #port .port-info a:hover {
+        color: #25e8ff; }
+  #port .content {
+    text-align: left;
+    padding: 0 3rem 3rem 0; }
+
+/*****************/
+/* PHOTOGRAPHY STYLES */
+/*****************/
+#photography {
+  position: relative;
+  background: #cccccc;
+  padding: 95px 0 80px;
+  overflow: hidden; }
+  #photography .list_project {
+    position: relative; }
+  #photography h1 {
+    text-transform: uppercase;
+    padding: 5px 0 20px; }
+  #photography article {
+    float: left;
+    position: relative;
+    width: auto;
+    height: auto;
+    line-height: 0; }
+    #photography article:hover .desc {
+      display: block; }
+    #photography article .desc {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #1d1d1d;
+      background: rgba(29, 29, 29, 0.9);
+      line-height: 15px; }
+      #photography article .desc h3 {
+        position: absolute;
+        bottom: 156px;
+        font-family: 'Lato', sans-serif;
+        font-size: 38px;
+        color: #eeeeee;
+        text-transform: uppercase;
+        line-height: 40px;
+        margin: 0 15%;
+        padding-bottom: 5px; }
+      #photography article .desc:after {
+        position: absolute;
+        content: '';
+        width: 30px;
+        height: 2px;
+        background: #FFF;
+        bottom: -2px;
+        left: 0; }
+      #photography article .desc p {
+        position: absolute;
+        bottom: 98px;
+        margin: 0 15%;
+        font-family: 'Lato';
+        color: #aeaeae;
+        font-size: 17px;
+        line-height: 19px; }
+      #photography article .desc .link,
+      #photography article .desc .soon {
+        display: block;
+        position: absolute;
+        bottom: 45px;
+        font-family: 'Lato', sans-serif;
+        text-transform: uppercase;
+        color: #9f9f9f;
+        padding: 4px 10px 4px 10px;
+        font-size: 12px;
+        border: 2px solid #dadada;
+        margin: 0 15%; }
+      #photography article .desc .link {
+        cursor: pointer;
+        text-decoration: none;
+        padding: 4px 24px 4px 7px;
+        background: no-repeat url("img/arrow_see_project.png") 95% center; }
+        #photography article .desc .link:hover {
+          color: #FFF; }
+
+/*****************/
+/* EXPERIMENTS STYLES */
+/*****************/
+#experiments {
+  position: relative;
+  background: #fff;
+  padding: 95px 0 80px;
+  overflow: hidden; }
+  #experiments .list_project {
+    position: relative; }
+  #experiments h1 {
+    text-transform: uppercase;
+    padding: 5px 0 20px; }
+  #experiments article {
+    float: left;
+    position: relative;
+    width: auto;
+    height: auto;
+    line-height: 0; }
+    #experiments article:hover .desc {
+      display: block; }
+    #experiments article .desc {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #1d1d1d;
+      background: rgba(29, 29, 29, 0.9);
+      line-height: 15px; }
+      #experiments article .desc h3 {
+        position: absolute;
+        bottom: 156px;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 38px;
+        color: #eeeeee;
+        text-transform: uppercase;
+        line-height: 40px;
+        margin: 0 15%;
+        padding-bottom: 5px; }
+      #experiments article .desc:after {
+        position: absolute;
+        content: '';
+        width: 30px;
+        height: 2px;
+        background: #FFF;
+        bottom: -2px;
+        left: 0; }
+      #experiments article .desc p {
+        position: absolute;
+        bottom: 98px;
+        margin: 0 15%;
+        font-family: 'Ubuntu', sans-serif;
+        color: #aeaeae;
+        font-size: 17px;
+        line-height: 19px; }
+      #experiments article .desc .link,
+      #experiments article .desc .soon {
+        display: block;
+        position: absolute;
+        bottom: 45px;
+        font-family: 'Ubuntu', sans-serif;
+        text-transform: uppercase;
+        color: #9f9f9f;
+        padding: 4px 10px 4px 10px;
+        font-size: 12px;
+        border: 2px solid #dadada;
+        margin: 0 15%; }
+      #experiments article .desc .link {
+        cursor: pointer;
+        text-decoration: none;
+        padding: 4px 24px 4px 7px;
+        background: no-repeat url("img/arrow_see_project.png") 95% center; }
+        #experiments article .desc .link:hover {
+          color: #FFF; }
+
+/*****************/
+/* CONTACT STYLES */
+/*****************/
+#contact {
+  background: #fff;
+  padding: 110px 0; }
+  #contact h1 {
+    margin-bottom: 25px;
+    padding-left: 5%; }
+  #contact p {
+    padding: 0 5%;
+    color: #818785;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    line-height: 22px; }
+    #contact p span {
+      font-family: "Open Sans", sans-serif; }
+  #contact form {
+    padding: 45px 5% 5px; }
+    #contact form input[type=text] {
+      width: 350px;
+      height: 37px;
+      border: 2px solid #d7d7d7;
+      font-family: "Open Sans", sans-serif;
+      font-size: 15px;
+      padding: 0 15px;
+      color: #b7b7b7;
+      margin-bottom: 15px;
+      outline: none; }
+      #contact form input[type=text]:hover {
+        border: 2px solid #d25f4f; }
+      #contact form input[type=text]:focus {
+        border: 2px solid #b0b0b0; }
+    #contact form textarea {
+      width: 427px;
+      height: 140px;
+      border: 2px solid #d7d7d7;
+      font-family: "Open Sans", sans-serif;
+      font-size: 15px;
+      padding: 15px;
+      resize: none;
+      overflow: hidden;
+      color: #b7b7b7;
+      margin-bottom: 30px;
+      outline: none; }
+      #contact form textarea:hover {
+        border: 2px solid #d25f4f; }
+      #contact form textarea:focus {
+        border: 2px solid #b0b0b0; }
+    #contact form .error input[type=text],
+    #contact form .error textarea {
+      border: 2px solid red; }
+    #contact form input[type=submit] {
+      width: 100px;
+      height: 32px;
+      background: none;
+      border: 2px solid #d25f4f;
+      color: #d25f4f;
+      font-family: "Open Sans", sans-serif;
+      text-transform: uppercase;
+      font-size: 15px;
+      font-weight: bold;
+      cursor: pointer; }
+      #contact form input[type=submit]:hover {
+        background: #d25f4f;
+        color: #e9e9e9; }
+    #contact form #formMsg {
+      margin: 20px 0; }
+      #contact form #formMsg .error {
+        color: red; }
+      #contact form #formMsg .good {
+        color: green; }
+
+/*****************/
+/* FOOTER STYLES */
+/*****************/
+footer {
+  height: 5rem;
+  background: #e51c00; }
+
+footer span {
+  display: block;
+  float: left;
+  font-size: 12px;
+  color: #000;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  line-height: 16px;
+  padding: 17px 0; }
+
+footer span a {
+  text-decoration: none;
+  color: #FFF; }
+  footer span a:hover {
+    text-decoration: underline; }
+
+footer ul {
+  float: right;
+  padding: 0;
+  margin: 9px 0 0 0; }
+
+footer ul li {
+  float: left;
+  height: 34px;
+  text-indent: -9999px; }
+
+footer ul li a {
+  display: block;
+  width: 34px;
+  height: 34px;
+  padding: 0 0 0 10px; }
+
+footer ul li.email a {
+  background: no-repeat url("/css/img/icons/email.png") center 3px; }
+  footer ul li.email a:hover {
+    background-position: center 4px; }
+
+footer ul li.facebook a {
+  background: no-repeat url("/css/img/icons/facebook.png") center 3px; }
+  footer ul li.facebook a:hover {
+    background-position: center 4px; }
+
+footer ul li.flickr a {
+  background: no-repeat url("/css/img/icons/flickr.png") center 3px; }
+  footer ul li.flickr a:hover {
+    background-position: center 4px; }
+
+footer ul li.linkedin a {
+  background: no-repeat url("/css/img/icons/linkedin.png") center 3px; }
+  footer ul li.linkedin a:hover {
+    background-position: center 4px; }
+
+footer ul li.pinterest a {
+  background: no-repeat url("/css/img/icons/pinterest.png") center 3px; }
+  footer ul li.pinterest a:hover {
+    background-position: center 4px; }
+
+footer ul li.twitter a {
+  background: no-repeat url("/css/img/icons/twitter.png") center 3px; }
+  footer ul li.twitter a:hover {
+    background-position: center 4px; }

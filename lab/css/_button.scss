@@ -1,0 +1,16 @@
+button{
+    border:1px solid #999;
+    background-color: #efefef;
+    font-family: "Open Sans";
+    outline:0;
+    &:hover{
+        border:1px solid #999;
+        background-color: #545454;
+        color:#fff;
+        cursor: pointer;
+    }
+
+    &#main-video-toggle{
+       // z-index: ;
+    }
+}

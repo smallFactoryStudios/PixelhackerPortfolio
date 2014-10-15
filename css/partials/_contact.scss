@@ -1,0 +1,99 @@
+/*****************/
+/* CONTACT STYLES */
+/*****************/
+#contact {
+    background: #fff;
+    padding: 110px 0;
+
+    h1 {
+        margin-bottom: 25px;
+        padding-left: 5%;
+    }
+
+    p {
+        padding: 0 5%;
+        color: #818785;
+        font-size: 16px;
+        font-family: $fonts;
+        line-height: 22px;
+
+        span{
+            font-family: $fonts;
+        }
+    }
+
+    form {
+        //padding : 45px 5% 105px;
+        padding: 45px 5% 5px;
+
+        input[type=text] {
+            width: 350px;
+            height: 37px;
+            border: 2px solid #d7d7d7;
+            font-family: $fonts;
+            font-size: 15px;
+            padding: 0 15px;
+            color: #b7b7b7;
+            margin-bottom: 15px;
+            outline: none;
+            &:hover {
+                border: 2px solid #d25f4f;
+            }
+            &:focus {
+                border: 2px solid #b0b0b0;
+            }
+        }
+
+        textarea {
+            width: 427px;
+            height: 140px;
+            border: 2px solid #d7d7d7;
+            font-family: $fonts;
+            font-size: 15px;
+            padding: 15px;
+            resize: none;
+            overflow: hidden;
+            color: #b7b7b7;
+            margin-bottom: 30px;
+            outline: none;
+            &:hover {
+                border: 2px solid #d25f4f;
+            }
+            &:focus {
+                border: 2px solid #b0b0b0;
+            }
+        }
+
+        .error input[type=text],
+        .error textarea {
+            border: 2px solid red;
+        }
+
+        input[type=submit] {
+            width: 100px;
+            height: 32px;
+            background: none;
+            border: 2px solid #d25f4f;
+            color: #d25f4f;
+            font-family: $fonts;
+            text-transform: uppercase;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            &:hover{
+                background: #d25f4f;
+                color: #e9e9e9;
+            }
+        }
+
+        #formMsg {
+            margin: 20px 0;
+            .error {
+                color: red;
+            }
+            .good {
+                color: green;
+            }
+        }
+    }
+}

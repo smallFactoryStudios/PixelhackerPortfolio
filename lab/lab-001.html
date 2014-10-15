@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=0" />
+	<title>pixelhacker lab :: CSS 3D Rotating Cube</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/lab-001.css"/>
+</head>
+<body>
+	<h1>Rotating 3D Cube - CSS3</h1>
+	<section class="container">
+		<div id="cube" class="show-front">
+			<figure class="front">1</figure>
+			<figure class="back">2</figure>
+			<figure class="right">3</figure>
+			<figure class="left">4</figure>
+			<figure class="top">5</figure>
+			<figure class="bottom">6</figure>
+		</div>
+	</section>
+
+	<section id="control-buttons">
+		<button class="show-front">side 1</button>
+		<button class="show-back">side 2</button>
+		<button class="show-right">side 3</button>
+		<button class="show-left">side 4</button>
+		<button class="show-top">side 5</button>
+		<button class="show-bottom">side 6</button>
+	</section>
+</body>
+<script>
+	Element.prototype.hasClassName = function (a) {
+		return new RegExp("(?:^|\\s+)" + a + "(?:\\s+|$)").test(this.className);
+	};
+
+	Element.prototype.addClassName = function (a) {
+		if (!this.hasClassName(a)) {
+			this.className = [this.className, a].join(" ");
+		}
+	};
+
+	Element.prototype.removeClassName = function (b) {
+		if (this.hasClassName(b)) {
+			var a = this.className;
+			this.className = a.replace(new RegExp("(?:^|\\s+)" + b + "(?:\\s+|$)", "g"), " ");
+		}
+	};
+
+	Element.prototype.toggleClassName = function (a) {
+		this[this.hasClassName(a) ? "removeClassName" : "addClassName"](a);
+	};
+
+	var init = function() {
+		console.log('init');
+
+		var box = document.querySelector('.container').children[0],
+			showPanelButtons = document.querySelectorAll('#control-buttons button'),
+			panelClassName = 'show-front',
+
+			onButtonClick = function( event ){
+				box.removeClassName( panelClassName );
+				panelClassName = event.target.className;
+				box.addClassName( panelClassName );
+			};
+
+			for(var i=0, len = showPanelButtons.length; i < len; i++) {
+				showPanelButtons[i].addEventListener( 'click', onButtonClick, false);
+			}
+
+//		document.getElementById('toggle-backface-visibility').addEventListener( 'click', function(){
+//			box.toggleClassName('panels-backface-invisible');
+//		}, false);
+
+	};
+
+	init();
+</script>
+</html>

@@ -1,0 +1,56 @@
+/*****************/
+/* GLOBAL STYLES */
+/*****************/
+body{
+    background: #202020;
+    color: #818785;
+    width: 100%;
+    height: 100%;
+}
+html{
+    font-size:62.5%;
+}
+#page {
+    position: relative;
+    z-index: 10;
+}
+#home{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+#container {
+    position: absolute;
+    top: 800px;
+    width: 100%;
+    z-index: 11;
+}
+.content {
+    width: 960px;
+    margin: 0 auto;
+}
+h1 {
+    color: $highlight-one;
+    font-size: 4rem;
+    font-family: $fonts;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+h2 {
+    color:$highlight-one;
+    font-size: 3.2rem;
+    font-family: $fonts;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+section {
+    width: 100%;
+    display: none;
+}
+footer {
+    display:none;
+}
+a {
+    outline: none;
+}

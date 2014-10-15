@@ -1,0 +1,176 @@
+{
+	"projects": [
+        {
+            "id":"001",
+            "name":"Spotify Kiosk Cannes Lions 2014",
+            "imagePath":"/img/portfolio/spotify-cannes.jpg",
+            "info":"Worked with Obscura Digital to build large format interactive touch-screen installations in the /'Spotify House/' at Cannes Lions 2014, France.",
+            "agency":"Agency - Obscura Digital",
+            "tech":"Technology - HTML5, CSS3, JavaScript",
+            "role":"Role - Lead Developer"
+        },
+        {
+            "id":"002",
+            "name":"City Center Vegas Website",
+            "imagePath":"/img/portfolio/city-center.jpg",
+            "info":"Worked with SK+G Advertising to build out video player, photos view, properties directory and video navigation.",
+            "agency":"Agency - SKG Advertising",
+            "link":"http://www.citycenter.com",
+            "role":"Role - Developer",
+            "tech":"Technology - HTML, AS3"
+        },
+        {
+            "id":"003",
+            "name":"Interpol",
+            "imagePath":"/img/portfolio/interpol.jpg",
+            "info":"Managed digital properties for NYC band Interpol, built custom CMS for updating of news, touring and ticket sales updates",
+            "agency":"Client - Interpol",
+            "link":"http://www.interpolnyc.com",
+            "role":"Role - Developer, Webmaster",
+            "tech":"Technology - HTML, CSS, MySQL, PHP"
+        },
+        {
+            "id":"004",
+            "name":"Fisher Investments",
+            "imagePath":"/img/portfolio/fisher-investments.jpg",
+            "info":"Created HTML templates for use in the backend for Fisher Investments",
+            "agency":"Agency - Extractable",
+            "link":"http://www.fisherinvestments.com",
+            "role":"Role - Senior Developer",
+            "tech":"Technology - HTML, CSS, Javascript"
+        },
+        {
+            "id":"005",
+            "name":"Pixies Music",
+            "imagePath":"/img/portfolio/pixies-music.jpg",
+            "info":"Built and maintained Pixies Music website which the band used for the 2004 ticket pre-sales and streaming audio.",
+            "agency":"Client - Pixies",
+            "link":"http://www.pixiesmusic.com",
+            "role":"Role - Developer, Webmaster",
+            "tech":"Technology - HTML, CSS, MySQL, PHP"
+        },
+        {
+            "id":"006",
+            "name":"Interpol Antics",
+            "imagePath":"/img/portfolio/interpol-antics.png",
+            "info":"Built micro-site for Matador Records to promote Interpol's 2nd album 'Antics'",
+            "agency":"Client - Interpol/Matador Records",
+            "role":"Role - Developer, Webmaster",
+            "tech":"Technology - HTML, CSS, MySQL, PHP, Flash"
+        },
+        {
+            "id":"007",
+            "name":"Ween iPhone App",
+            "imagePath":"/img/portfolio/ween.png",
+            "info":"Built official iPhone application for Ween, including tour mapping and Ween Radio",
+            "agency":"Client - Ween",
+            "tech":"Technology - Objective-C",
+            "role":"Role - Senior Developer"
+        },
+        {
+            "id":"008",
+            "name":"Sweet Talk iPhone App",
+            "imagePath":"/img/portfolio/sweet-talk-iphone-app.png",
+            "info":"Built the first version of the Sweet Talk iPhone app for Wrigley's Gum",
+            "agency":"Agency - EVB",
+            "link":"https://itunes.apple.com/us/app/sweet-talk/id382199837?mt=8",
+            "tech":"Technology - Objective-C",
+            "role":"Role - Senior Developer",
+            "awards":[{
+                    "award":"Mobile FWA : Mobile of the Day - 10.05.10"
+                },
+                {
+                    "award":"App Store: #1 Free Entertainment App - 08.09.10"
+                },
+                {
+                    "award":"App Store: #6 Free App Overall - 08.09.10"
+                }
+            ]
+        },
+        {
+            "id":"009",
+            "name":"Ford - Innovations",
+            "imagePath":"/img/portfolio/ford-innovations.jpg",
+            "info":"Worked on the Ford Innovations micro-site. Built a 3D panel environment to showcase the 4 innovations : Innovation,  Technology, Safety, and Design",
+            "agency":"Agency - Razorfish",
+            "tech":"Technology - AS3, Papervision3D",
+            "role":"Role - Senior Developer",
+            "link":"http://www.webaward.org/winner.asp?eid=9758",
+            "awards":[{
+                    "award":"Web Marketing Association 2007 : Outstanding Achievement in Website Development"
+                }
+            ]
+        },
+        {
+            "id":"010",
+            "name":"Crayola Holiday Gift Guide",
+            "imagePath":"/img/portfolio/crayola-64-days-xmas.png",
+            "info":"Built a micro-site for Crayola that spotlights 64 gifts for the holidays.",
+            "agency":"Agency - Continuity",
+            "tech":"Technology - AS3, PaperVision3D",
+            "role":"Role - Senior Developer"
+        },
+        {
+            "id":"011",
+            "name":"adidas : MLS",
+            "imagePath":"/img/portfolio/adidas-mls.png",
+            "info":"The MLS site for adidas. Implemented many 3rd party elements to help promote the community aspect such as video mash-ups, 360 degree video, team songs, and widgets",
+            "agency":"EVB",
+            "tech":"Technology - AS3",
+            "role":"Role - Tech Lead",
+            "awards":[{
+                    "award":"iSPOT of the Week Adidas : Rock the Pitch"
+                }
+            ]
+        },
+        {
+            "id":"012",
+            "name":"adidas : Basketball Brotherhood",
+            "imagePath":"/img/portfolio/adidas-basketball.png",
+            "info":"Developed and implemented all the launches for the web site and over-saw the SVN repository.",
+            "agency":"EVB",
+            "tech":"Technology - AS3, HTML",
+            "role":"Role - Tech Lead",
+            "awards":[{
+                    "award":"FWA : Site Of The Day - Nov 22, 2007"
+                },
+                {
+                    "award":"Webby Awards : Official Honoree 2007"
+                }
+            ]
+        },
+        {
+            "id":"013",
+            "name":"Maybelline: My Color Advisor",
+            "imagePath":"/img/portfolio/maybelline-my-color-advisor.png",
+            "info":"Built and maintained the My Color Advisor section of the Maybelline.com website. This functionality allowed the user to enter their information such as skin tone, eye color and clothing and then based off of what products they chose, it would suggest what kind of product they should choose.",
+            "agency":"Agency - Razorfish",
+            "link":"http://www.webaward.org/winner.asp?eid=9750",
+            "tech":"Technology - HTML, AS3",
+            "role":"Role - Senior Developer",
+            "awards":[{
+                "award":"Web Marketing Association 2007 - Outstanding Achievement in Website Development"
+            }]
+        },
+        {
+            "id":"014",
+            "name":"Streets of San Francisco iPhone App",
+            "imagePath":"/img/portfolio/streets-of-san-francisco-iphone.png",
+            "info":"Built an iPhone app that works off of Parse and shows the shooting locations of the 1970's TV show, The Streets of San Francisco.",
+            "agency":"Client - Pixelhacker",
+            "link":"https://itunes.apple.com/us/app/filming-locations-streets/id827641495?mt=8",
+            "tech":"Technology - Objective-C, Parse",
+            "role":"Role - Senior Developer"
+        },
+        {
+            "id":"015",
+            "name":"Ever After High Interactive Music Video",
+            "imagePath":"/img/portfolio/ever-after-high.png",
+            "info":"Built an interactive choose your own video for Mattel's Ever After High.",
+            "agency":"Client - This Moment",
+            "link":"https://everafterhigh.thismoment.com/demo/index.php",
+            "tech":"Technology - AS3, PHP, HTML",
+            "role":"Role - Senior Developer"
+        }
+    ]
+}

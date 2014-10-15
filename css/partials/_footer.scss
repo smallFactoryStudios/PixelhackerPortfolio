@@ -1,0 +1,77 @@
+/*****************/
+/* FOOTER STYLES */
+/*****************/
+footer {
+    height: 5rem;
+    background: $highlight-one;
+}
+footer span {
+    display: block;
+    float: left;
+    font-size: 12px;
+    color: #000;
+    font-family: $fonts;
+    text-transform: uppercase;
+    line-height: 16px;
+    padding: 17px 0;
+}
+footer span a {
+    text-decoration: none;
+    color: #FFF;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+footer ul {
+    float: right;
+    padding: 0;
+    margin: 9px 0 0 0;
+}
+footer ul li {
+    float: left;
+    height: 34px;
+    text-indent: -9999px;
+}
+footer ul li a{
+    display: block;
+    width: 34px;
+    height: 34px;
+    padding: 0 0 0 10px;
+}
+
+footer ul li.email a {
+    background: no-repeat url("/css/img/icons/email.png") center 3px;
+    &:hover {
+        background-position: center 4px;
+    }
+}
+footer ul li.facebook a {
+    background: no-repeat url("/css/img/icons/facebook.png") center 3px;
+    &:hover {
+        background-position: center 4px;
+    }
+}
+footer ul li.flickr a {
+    background: no-repeat url("/css/img/icons/flickr.png") center 3px;
+    &:hover {
+        background-position: center 4px;
+    }
+}
+footer ul li.linkedin a {
+    background: no-repeat url("/css/img/icons/linkedin.png") center 3px;
+    &:hover {
+        background-position: center 4px;
+    }
+}
+footer ul li.pinterest a {
+    background: no-repeat url("/css/img/icons/pinterest.png") center 3px;
+    &:hover {
+        background-position: center 4px;
+    }
+}
+footer ul li.twitter a {
+    background: no-repeat url("/css/img/icons/twitter.png") center 3px;
+    &:hover {
+        background-position: center 4px;
+    }
+}

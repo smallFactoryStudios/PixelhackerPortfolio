@@ -1,0 +1,20 @@
+{
+  "name": "Pixelhacker",
+  "version": "0.0.0",
+  "authors": [
+    "pixelhacker <ray@pixelhacker.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "~4.1.0",
+    "greensock": "~1.13.1",
+    "jqueryui": "~1.11.0"
+  }
+}

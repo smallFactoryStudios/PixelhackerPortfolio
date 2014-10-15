@@ -1,0 +1,108 @@
+/*****************/
+/* PORTFOLIO ITEM STYLES */
+/*****************/
+.port-close-button{
+    position:absolute;
+    top:0;
+    right:0;
+    width:20px;
+    height:20px;
+    padding:1.5rem 1.5rem 0 0;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+#port{
+    @include cf;
+    padding:2rem 3.5rem;
+
+    .port-image{
+        float:left;
+        padding:0 2rem 0 0;
+    }
+
+    .port-info{
+        @include boxSizing;
+        float:left;
+        width:40rem;
+        .title-port{
+            display:block;
+            z-index:840;
+            color:#c00;
+            font-family: $fonts;
+            font-size:3.6rem;//
+            font-weight: $bold;
+        }
+
+        .info-port{
+            display: block;
+            padding:1.3rem 0;
+            font-family: $fonts;
+            font-size:1.4rem;
+            color:#000;
+        }
+
+        .link-port{
+            display:none;
+        }
+
+        .agency-port{
+            display: block;
+            padding:.3rem 0;
+            font-family: $fonts;
+            font-size:1.4rem;
+            color:#000;
+        }
+
+        .tech-port{
+            display: block;
+            padding:.3rem 0;
+            font-family: $fonts;
+            font-size:1.4rem;
+            color:#000;
+        }
+
+        .role-port{
+            display: block;
+            padding:.3rem 0;
+            font-family: $fonts;
+            font-size:1.4rem;
+            color:#000;
+        }
+
+        .awards-port{
+            .title{
+                font-weight:700;
+            }
+            display:none;
+            padding:1.3rem 0;
+            font-family: $fonts;
+            font-size:1.4rem;
+            color:#000;
+        }
+
+        a{
+            font-family: $fonts;
+            font-size:1.4rem;
+            color:#000;
+            text-decoration: none;
+            &:hover{
+                color:#25e8ff;
+            }
+        }
+    }
+
+
+    .content{
+       // height:auto;
+       // width:auto;
+        text-align: left;
+        padding:0 3rem 3rem 0;
+
+//        img{
+//            padding: 0 0 3rem;
+//        }
+
+    }
+}

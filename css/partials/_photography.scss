@@ -1,0 +1,97 @@
+/*****************/
+/* PHOTOGRAPHY STYLES */
+/*****************/
+#photography {
+    position: relative;
+    background: #cccccc;
+    padding: 95px 0 80px;
+    overflow: hidden;
+    .list_project {
+        position: relative;
+    }
+
+    h1{
+        text-transform:uppercase;
+        padding:5px 0 20px;
+    }
+
+    article {
+        float: left;
+        position: relative;
+        width: auto;
+        height: auto;
+        line-height: 0;
+
+        &:hover .desc{
+            display: block;
+        }
+
+        .desc {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #1d1d1d;
+            background: rgba(29, 29, 29, 0.9);
+            line-height: 15px;
+
+            h3{
+                position: absolute;
+                bottom: 156px;
+                font-family: 'Lato', sans-serif;
+                font-size: 38px;
+                color: #eeeeee;
+                text-transform: uppercase;
+                line-height: 40px;
+                margin: 0 15%;
+                padding-bottom: 5px;
+            }
+
+            &:after {
+                position: absolute;
+                content: '';
+                width: 30px;
+                height: 2px;
+                background: #FFF;
+                bottom: -2px;
+                left: 0;
+            }
+
+            p {
+                position: absolute;
+                bottom: 98px;
+                margin: 0 15%;
+                font-family: 'Lato';
+                color: #aeaeae;
+                font-size: 17px;
+                line-height: 19px;
+            }
+
+            .link,
+            .soon{
+                display: block;
+                position: absolute;
+                bottom: 45px;
+                font-family: 'Lato', sans-serif;
+                text-transform: uppercase;
+                color: #9f9f9f;
+                padding: 4px 10px 4px 10px;
+                font-size: 12px;
+                border: 2px solid #dadada;
+                margin: 0 15%;
+            }
+
+            .link{
+                cursor: pointer;
+                text-decoration: none;
+                padding: 4px 24px 4px 7px;
+                background: no-repeat url("img/arrow_see_project.png") 95% center;
+                &:hover {
+                    color: #FFF;
+                }
+            }
+        }
+    }
+}
